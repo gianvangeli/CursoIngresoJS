@@ -6,8 +6,9 @@ function mostrar()
 {
 	var nombre;
 
-	nombre promt ("Por favor ingrese su dato");
-	elNombre.value = nombre;
+	nombre= promt ("Por favor ingrese su dato");
+	//elNombre.value = nombre; 
+	document.getElementById('elNombre').value = nombre 
 
 
 
