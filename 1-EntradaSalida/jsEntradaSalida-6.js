@@ -15,7 +15,7 @@ segundoNumero = parseInt(segundoNumero);
 
 suma=primerNumero+segundoNumero;
 
-alert("la suma es :"+suma);
+alert("la suma es :"+ suma);
 }
 
 
