@@ -7,8 +7,7 @@ laEdad = edad.value;
 
 laEdad= parseInt(laEdad);
 
-if (laEdad ==15);
-
+if (laEdad ==15)
 {
 	alert ("Niña bonita");
 
