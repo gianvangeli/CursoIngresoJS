@@ -5,12 +5,12 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 var Sueldo;
-var Resultado;
+var Aumento;
 
 Sueldo=sueldo.value;
-Resultado=resultado.value;
+Aumento=aumento.value;
 
-Sueldo=parseInt(Sueldo)-1,1;
+Sueldo=parseInt(Sueldo);
 
 Resultado=Sueldo-
 
