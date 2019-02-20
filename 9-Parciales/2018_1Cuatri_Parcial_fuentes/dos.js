@@ -6,6 +6,11 @@ function mostrar()
     nombre = elNombre.value;
     localidad = laLocalidad.value;
 
-    alert("Usted es "+nombre+" y vive en la localidad de "+localidad);
+    alert ("usted es" +nombre  "y vive en la localidad de" +localidad.);
+
+
+
+
+   
 
 }
