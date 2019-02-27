@@ -1,40 +1,79 @@
 function mostrar()
 {
-    var primerNumero;
-    var segundoNumero;
-    var suma;
+  var descuento;
+	var sumaTotal = 0;
+	var mayor;
+	var valorUno;
+	var valorDos;
+	var valorTres;
+	var valorCuatro;
 
-    primerNumero = prompt ("Ingrese el primer numero");
-    segundoNumero = prompt ("Ingrese el segundo numero");
+		valorUno = prompt ("Ingrese un valor");
+		valorUno = parseInt(valorUno);
 
-    if (primerNumero == segundoNumero)
-    {
-        alert (primerNumero + segundoNumero);
+		valorDos = prompt ("Ingrese un valor");
+		valorDos = parseInt(valorDos);
+
+		valorTres = prompt ("Ingrese un valor");
+		valorTres = parseInt(valorTres);
+
+		valorCuatro = prompt ("Ingrese un valor");
+		valorCuatro = parseInt(valorCuatro);
+
+
+		if(valorUno >= valorDos && valorUno >= valorTres && valorUno >= valorCuatro)
+		{
+			mayor = valorUno;
+		}
+		else
+		{
+			if(valorDos >= valorTres && valorDos >= valorCuatro)
+			{
+				mayor = valorDos;
+			}
+			else
+			{
+				if(valorTres >= valorCuatro)
+				{
+					mayor = valorTres;
+				}
+				else
+				{
+					mayor = valorCuatro;
+				}
+			}
+		}
+
+
+
+
+		sumaTotal = valorUno+valorDos+valorTres+valorCuatro;
+
+
+
+	if(sumaTotal < 50)
+	{
+		descuento = 1.15;
+	}
+	else
+	{
+		if(sumaTotal >= 50 && sumaTotal < 100 )
+		{
+			descuento = 0.95;
+		}
+		else
+		{
+			if(sumaTotal > 100)
+			{
+				descuento = 0.9;
+			}
+		}
+	}
+	sumaTotal = sumaTotal * descuento;
+
+	alert("El numero mayor es "+mayor+" y el precio quedaria "+sumaTotal);
     }
 
-    primerNumero = parseInt (primerNumero);
-    segundoNumero = parseInt (segundoNumero);
-
-    if (primerNumero > segundoNumero)
-    {
-        suma = primerNumero / segundoNumero;
-        alert ("La division es"+suma);
-    }
-    if (primerNumero < segundoNumero)
-    {
-        suma = primerNumero+segundoNumero;
-
-        if (suma <50)
-        {
-            alert ("la suma es" +suma+"y es menor a 50");
-
-        }
-        else
-        {
-            alert ("La suma es:"+suma);
-        }
-
-    }
 
 
 
@@ -46,4 +85,25 @@ function mostrar()
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
